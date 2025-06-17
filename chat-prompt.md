@@ -6,7 +6,7 @@ Please read and confirm you understand:
 2. The epic file with tasks
 3. That you should research documentation when uncertain
 4. That you should NOT mark tasks as complete until I explicitly approve
-5. That you should use today's actual date (June 17, 2025)
+5. That you should use today's actual date 
 
 **Requirements Processing:**
 I will also provide requirements for new work. When I do, you should:
