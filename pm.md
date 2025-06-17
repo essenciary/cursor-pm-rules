@@ -140,4 +140,4 @@ Work on Epic 001, Task 001-01: Setup Authentication Database Schema
 Approve Task [XXX-XX] - mark as completed
 ```
 
-**Important**: AI will implement and commit code, but will NOT mark tasks as "Done" until you explicitly approve.
+**Important**: AI will implement and commit code, but will NOT mark tasks as "Done" until the User explicitly approves.
