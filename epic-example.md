@@ -1,4 +1,4 @@
-// add to epics/epic-<epic_number>-<epic_description>.md -- ex: epic-001-report-for-search-tracking-data.md
+<!-- add to epics/epic-<epic_number>-<epic_description>.md -- ex: epic-001-report-for-search-tracking-data.md -->
 # Epic 001: Report for Search Tracking Data
 
 ## Overview
