@@ -37,8 +37,8 @@ Other relevant fields:
 - [x] Add navigation link in admin menu
 
 **Status**: Done
-**Assigned**: 2025-06-13
-**Completed**: 2025-06-13
+**Assigned**: 2025-06-12
+**Completed**: 2025-06-12
 
 ### Task 001-02: Implement Date Range Filtering
 - [x] Add date range picker to template
@@ -74,8 +74,8 @@ Other relevant fields:
 - [x] Style chart to match admin theme
 
 **Status**: Done
-**Assigned**: 2025-06-13
-**Completed**: 2025-06-13
+**Assigned**: 2025-06-14
+**Completed**: 2025-06-14
 
 ### Task 001-05: Add Total Searches Chart
 - [x] Create second chart container below the tracking metrics chart
@@ -86,8 +86,8 @@ Other relevant fields:
 - [x] Ensure both charts update when date filter is applied
 
 **Status**: Done
-**Assigned**: 2025-06-13
-**Completed**: 2025-06-13
+**Assigned**: 2025-06-14
+**Completed**: 2025-06-14
 
 ### Task 001-06: Refactoring of the tracking metrics chart
 - [x] Convert tracking metrics chart from line chart to stacked bar chart
@@ -111,8 +111,8 @@ Other relevant fields:
 - [x] Ensure chart updates properly with date filter changes
 
 **Status**: Done
-**Assigned**: 2025-06-13
-**Completed**: 2025-06-13
+**Assigned**: 2025-06-16
+**Completed**: 2025-06-16
 
 ### Task 001-07: Restore and Fix Top AI Box Usage Metrics Chart
 - [x] Restore the top AI Box Usage Metrics chart as a stacked bar chart (AI Clicks, DDG Clicks, No Clicks)
@@ -121,8 +121,8 @@ Other relevant fields:
 - [x] Confirm both top and bottom charts work independently
 
 **Status**: Done
-**Assigned**: 2025-06-13
-**Completed**: 2025-06-13
+**Assigned**: 2025-06-16
+**Completed**: 2025-06-16
 
 ## Notes
 - Consider using Chart.js or similar for visualization
