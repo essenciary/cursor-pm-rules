@@ -103,36 +103,7 @@ Brief description of the epic and its goals.
 - Epic ID: 3 digits (001, 002, 003...)
 - Task ID: Epic-ID + dash + 2 digits (001-01, 001-02, 002-01...)
 
-## 4. Version Control
-
-### 4.1 Commit Messages
-Format: `<task-id>: <task-description>`
-Example: `001-01: Setup Authentication Database Schema`
-
-### 4.2 Branch Strategy (if applicable)
-- Create feature branch for each task: `task/001-01-auth-db-schema`
-- Merge to main when task is Done
-
-## 5. Testing Requirements
-
-### 5.1 Test Plan per Task
-Each task with code changes must include:
-- Unit tests for new functions/classes
-- Integration tests for component interactions
-- Basic compilation/syntax verification
-
-### 5.2 Test Locations
-- Unit tests: `test/unit/`
-- Integration tests: `test/integration/`
-
-### 5.3 Completion Criteria
-No task marked "Done" without:
-- All checklist items implemented (but not checked off until User approval)
-- Code committed with proper task ID
-- **User explicit approval** that functionality works as specified
-- Only then: check off items and update status to "Done"
-
-## 6. AI Agent Instructions
+## 4. AI Agent Instructions
 
 1. **Always confirm epic and task** before starting work
 2. **Update task status to "InProgress"** when starting work (use CURRENT date)
@@ -150,10 +121,9 @@ No task marked "Done" without:
 11. **Propose new tasks** for scope outside current task
 12. **Focus on one task** - no parallel work unless explicitly approved
 13. **Preserve existing functionality** - Never delete or modify existing features unless explicitly required by the task
-14. **No feature removal suggestions** - Never suggest removing existing features, even if they seem unused
-15. **Implementation vs Completion**: Implementation = code written and committed; Completion = User approved and confirmed working
+14. **Implementation vs Completion**: Implementation = code written and committed; Completion = User approved and confirmed working
 
-## 7. User Instructions for AI
+## 5. User Instructions for AI
 
 To assign work, use format:
 ```
