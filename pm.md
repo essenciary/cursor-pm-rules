@@ -1,4 +1,4 @@
-# AI Coding Agent Policy - Simplified
+# AI Coding Agent Policy
 
 ## 1. Introduction
 
@@ -16,7 +16,7 @@
 6. **Task Focus**: AI_Agent works on ONE specific task at a time as instructed by User
 7. **Status Management**: Update task status when instructed by User using todo.md style (- [ ] todo, - [x] done)
 8. **Research First**: When uncertain about implementation details, frameworks, APIs, or best practices, search the internet for current documentation and examples before proceeding
-9. **Constants for Repeated Values**: Values used >1 MUST be named constants
+9. **Constants for Repeated Values**: Values used MUST be named constants
 10. **Scope Adherence**: Stay within task scope. Propose improvements as new tasks
 11. **Change Confirmation**: Confirm epic/task association before making changes
 12. **Preserve Existing Features**: NEVER remove or break existing functionality unless explicitly requested
