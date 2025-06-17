@@ -1,5 +1,4 @@
-<!-- place into .cursor/rules/pm.md -->
-# AI Coding Agent Policy
+# AI Coding Agent Policy - Simplified
 
 ## 1. Introduction
 
@@ -15,7 +14,7 @@
 4. **User Responsibility**: User is responsible for all code changes
 5. **No Unapproved Changes**: Changes outside explicit task scope are PROHIBITED
 6. **Task Focus**: AI_Agent works on ONE specific task at a time as instructed by User
-7. **Status Management**: Update task status immediately using todo.md style (- [ ] todo, - [x] done)
+7. **Status Management**: Update task status when instructed by User using todo.md style (- [ ] todo, - [x] done)
 8. **Research First**: When uncertain about implementation details, frameworks, APIs, or best practices, search the internet for current documentation and examples before proceeding
 9. **Constants for Repeated Values**: Values used >1 MUST be named constants
 10. **Scope Adherence**: Stay within task scope. Propose improvements as new tasks
