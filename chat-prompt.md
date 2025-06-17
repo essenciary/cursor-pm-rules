@@ -1,4 +1,4 @@
-// start a new chat and use this prompt 
+<!-- start a new chat and use this prompt -->
 I want you to follow the coding rules in .cursor/rules and work on the epic file I'm about to share.
 
 Please read and confirm you understand:
