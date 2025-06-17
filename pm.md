@@ -1,3 +1,4 @@
+<!-- add to .cursor/rules/pm.md -->
 # AI Coding Agent Policy
 
 ## 1. Introduction
@@ -97,7 +98,6 @@ Brief description of the epic and its goals.
 7. Only after User approval, AI_Agent:
    - Marks all checklist items as `- [x] done`
    - Updates status to "Done" and adds completion date (use CURRENT date)
-   - Moves completed task to "Completed Tasks" section
 
 ### 3.4 Task ID Format
 - Epic ID: 3 digits (001, 002, 003...)
