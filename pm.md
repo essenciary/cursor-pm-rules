@@ -1,5 +1,5 @@
 <!-- place into .cursor/rules/pm.md -->
-# AI Coding Agent Policy - Simplified
+# AI Coding Agent Policy
 
 ## 1. Introduction
 
