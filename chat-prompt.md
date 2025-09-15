@@ -1,15 +1,14 @@
 <!-- start a new chat and use this prompt -->
 I want you to follow the coding rules in .cursor/rules and work on the epic file I'm about to share.
 
-Please read and confirm you understand:
+Read and confirm you understand:
 1. The AI Coding Agent Policy in .cursor/rules
 2. The epic file with tasks
 3. That you should research documentation when uncertain
 4. That you should NOT mark tasks as complete until I explicitly approve
-5. That you should use today's actual date 
 
 **Requirements Processing:**
-I will also provide requirements for new work. When I do, you should:
+I will provide requirements for new work. When I do, you should:
 1. **Analyze the requirements** and convert them into well-defined tasks and subtasks
 2. **Task Guidelines**:
    - Each task should be focused around a specific feature or component
@@ -20,13 +19,11 @@ I will also provide requirements for new work. When I do, you should:
 3. **Propose the task breakdown** with:
    - Clear task names and descriptions
    - Specific subtask checklists
-   - Dependencies between tasks (if any)
-   - Estimated complexity/effort
 4. **Wait for my approval** before adding any tasks to the epic file
 5. **After approval**, add the tasks to the epic file and wait for task assignment
 
 **Requirements for New Work:**
-[Describe the features/functionality you want implemented]
+Work on epic-001-user-authentication.md
 
 **Next Steps:**
 - Confirm you understand the rules and epic structure
@@ -34,5 +31,3 @@ I will also provide requirements for new work. When I do, you should:
 - Wait for approval before updating epic file
 - Wait for specific task assignment to begin work
 
-[Attach/paste .cursor/rules file]
-[Attach/paste epic-XXX-name.md file]
