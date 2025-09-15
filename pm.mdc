@@ -42,7 +42,7 @@ epics/
 Each epic file follows this structure:
 
 ```markdown
-# Epic 001: User Authentication
+# Epic 001: Epic title
 
 ## Overview
 Brief description of the epic and its goals.
@@ -54,21 +54,18 @@ Brief description of the epic and its goals.
 
 ## Tasks
 
-### Task 001-01: Setup Authentication Database Schema
-- [ ] Create user table with email, password_hash, created_at
-- [ ] Create sessions table for session management
-- [ ] Add database migration scripts
-- [ ] Test database schema creation
+### Task 001-01: Title task 1
+- [ ] Work item 1 (Ex: Create user table with email, password_hash, created_at)
+- [ ] Work item 2 (Ex: Create sessions table for session management)
+- [ ] ...
 
 **Status**: Todo | InProgress | Done | Blocked
 **Assigned**: [Date when work started]
 **Completed**: [Date when marked done]
 
-### Task 001-02: Implement User Registration
-- [ ] Create registration endpoint
-- [ ] Add password hashing with bcrypt
-- [ ] Implement email validation
-- [ ] Add registration tests
+### Task 001-02: Title task 2
+- [ ] Work item 1
+- [ ] ...
 
 **Status**: Todo | InProgress | Done | Blocked
 **Assigned**: [Date when work started]
