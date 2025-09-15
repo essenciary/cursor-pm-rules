@@ -1,4 +1,7 @@
-<!-- add to .cursor/rules/pm.md -->
+---
+description: AI Coding Agent Policy
+alwaysApply: true
+---
 # AI Coding Agent Policy
 
 ## 1. Introduction
@@ -67,9 +70,9 @@ Brief description of the epic and its goals.
 - [ ] Implement email validation
 - [ ] Add registration tests
 
-**Status**: Todo
-**Assigned**:
-**Completed**:
+**Status**: Todo | InProgress | Done | Blocked
+**Assigned**: [Date when work started]
+**Completed**: [Date when marked done]
 
 ## Notes
 - Implementation decisions
@@ -83,21 +86,20 @@ Brief description of the epic and its goals.
 
 **Working Process**:
 1. User specifies: "Work on Epic 001, Task 001-01"
-2. AI_Agent updates task status to "InProgress" and adds assigned date (use CURRENT date)
+2. AI_Agent updates task status to "InProgress" and adds assigned date (use today date!)
 3. **Impact Analysis**: Before modifying existing code, AI_Agent must:
    - Search codebase for all usages of variables/functions being modified
    - Identify potential breaking changes
    - If changes affect existing functionality, request User approval first
    - Document what existing code will be modified and why
 4. AI_Agent implements the task following the checklist
-5. AI_Agent commits code with message: `001-01: Setup Authentication Database Schema`
-6. **IMPORTANT**: AI_Agent does NOT mark task as "Done" or check off items until:
+5. **IMPORTANT**: AI_Agent does NOT mark task as "Done" or check off items until:
    - User explicitly confirms the implementation works as specified
    - All functionality has been tested and approved by User
    - User gives explicit approval to mark task complete
-7. Only after User approval, AI_Agent:
-   - Marks all checklist items as `- [x] done`
-   - Updates status to "Done" and adds completion date (use CURRENT date)
+6. Only after User approval, AI_Agent:
+   - Marks completed todo items as `- [x] done`
+   - Updates status to "Done" and adds completion date (use today date)
 
 ### 3.4 Task ID Format
 - Epic ID: 3 digits (001, 002, 003...)
@@ -106,7 +108,7 @@ Brief description of the epic and its goals.
 ## 4. AI Agent Instructions
 
 1. **Always confirm epic and task** before starting work
-2. **Update task status to "InProgress"** when starting work (use CURRENT date)
+2. **Update task status to "InProgress"** when starting work (use today date)
 3. **Research when needed**: If you don't know how to implement something, search the internet for official documentation, tutorials, or best practices BEFORE starting implementation
 4. **Conduct impact analysis**: Before modifying existing code, search codebase for dependencies and potential breaking changes
 5. **Graduated approval for existing code changes**:
@@ -116,12 +118,11 @@ Brief description of the epic and its goals.
 6. **Follow the checklist** - implement each item but do NOT check them off
 7. **Commit code** with proper task ID in message when implementation is complete
 8. **Wait for User approval** - do NOT mark task as "Done" or check off items until User explicitly confirms the implementation works
-9. **Use current date** - never use historical dates, always use today's actual date
-10. **Ask for clarification** if task requirements are unclear
-11. **Propose new tasks** for scope outside current task
-12. **Focus on one task** - no parallel work unless explicitly approved
-13. **Preserve existing functionality** - Never delete or modify existing features unless explicitly required by the task
-14. **Implementation vs Completion**: Implementation = code written and committed; Completion = User approved and confirmed working
+9. **Ask for clarification** if task requirements are unclear
+10. **Propose new tasks** for scope outside current task
+11. **Focus on one task** - no parallel work unless explicitly approved
+12. **Preserve existing functionality** - Never delete or modify existing features unless explicitly required by the task
+13. **Implementation vs Completion**: Implementation = code written and committed; Completion = User approved and confirmed working
 
 ## 5. User Instructions for AI
 
@@ -140,4 +141,4 @@ Work on Epic 001, Task 001-01: Setup Authentication Database Schema
 Approve Task [XXX-XX] - mark as completed
 ```
 
-**Important**: AI will implement and commit code, but will NOT mark tasks as "Done" until the User explicitly approves.
+**Important**: AI will implement the code, but will NOT mark tasks as "Done" until the User explicitly approves.
