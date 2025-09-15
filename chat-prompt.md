@@ -31,3 +31,25 @@ Work on epic-001-user-authentication.md
 - Wait for approval before updating epic file
 - Wait for specific task assignment to begin work
 
+---
+
+**Example of tasks to add to epic:** 
+### Task 001-01: Create Admin Report View Structure
+- [x] Create new admin view for search tracking report
+- [x] Add URL routing for the report
+- [x] Create basic HTML template with date range filter
+- [x] Add navigation link in admin menu
+
+**Status**: Done
+**Assigned**: 2025-06-12
+**Completed**: 2025-06-12
+
+### Task 001-02: Implement Date Range Filtering
+- [ ] Add date range picker to template
+- [ ] Implement backend logic to filter by date range
+- [ ] Add form validation for date inputs
+- [ ] Test date filtering functionality
+
+**Status**: Todo
+**Assigned**: 
+**Completed**: 
