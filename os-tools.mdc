@@ -1,0 +1,230 @@
+---
+description: Windows Python tooling and commands
+globs:
+alwaysApply: false
+---
+# Tooling Requirements
+
+## System Environment
+
+- **Operating System**: Windows 11 Pro
+- **Shell**: PowerShell 7.5.x
+- **Python Environment**: Poetry-managed virtual environment
+
+## Command Line Requirements
+
+### 1. Python Environment Management
+
+- **NEVER run python commands directly**
+- **ALWAYS use Poetry** for Python operations:
+
+  ```powershell
+  # Activate environment first
+  poetry env activate
+
+  # OR run commands with poetry run
+  poetry run python script.py
+  poetry run python manage.py runserver
+  poetry run pytest
+  poetry run django-admin startproject
+
+  # Install dependencies (NOT pip install)
+  poetry add package-name
+  poetry add requests
+  poetry add "django>=4.0,<5.0"
+  poetry add --group dev pytest
+  poetry add --group test coverage
+
+  # Install project dependencies
+  poetry install
+
+  # Update dependencies
+  poetry update
+  ```
+
+  When running standalone python commands, in a new terminal, you need to activate the environment first and then run the command.
+
+  ```powershell
+  poetry env activate
+  poetry run <command>
+  ```
+
+### 2. Directory Operations
+
+- **Create directories ONE at a time**:
+
+  ```powershell
+  # ✅ Correct
+  mkdir folder1
+  mkdir folder2
+
+  # ❌ Incorrect (causes errors)
+  mkdir folder1 folder2
+  ```
+
+- **For nested directories**:
+
+  ```powershell
+  # ✅ Use -Force for parent directories
+  mkdir -Force path\to\nested\folder
+
+  # ✅ Or create step by step
+  mkdir parent
+  mkdir parent\child
+  ```
+
+### 3. Path Navigation
+
+- **Use proper Windows path separators**: Use `\` or PowerShell-compatible paths
+- **Always verify current directory** before operations:
+
+  ```powershell
+  # Check current location
+  Get-Location
+  # or
+  pwd
+
+  # Navigate properly
+  cd "C:\path\to\project"
+  cd .\subfolder
+  cd ..\parent
+  ```
+
+- **Use quotes for paths with spaces**:
+
+  ```powershell
+  cd "C:\My Project\folder"
+  ```
+
+### 4. File Operations
+
+- **File creation/editing**:
+
+  ```powershell
+  # Create new file
+  New-Item -ItemType File -Name "filename.py"
+
+  # Append content (avoid literal \n)
+  Add-Content -Path "file.txt" -Value "line content"
+  "content" | Out-File -FilePath "file.txt" -Append
+  ```
+
+### 5. PowerShell Specific Commands
+
+- **Use PowerShell cmdlets when possible**:
+
+  ```powershell
+  # File operations
+  Copy-Item source destination
+  Move-Item source destination
+  Remove-Item filename
+
+  # Directory listing
+  Get-ChildItem
+  ls  # alias
+
+  # Process management
+  Get-Process
+  Stop-Process -Name "processname"
+  ```
+
+## Development Workflow
+
+### To debug execution of Python Code
+
+1. **Verify Poetry environment**:
+
+   ```powershell
+   poetry env info
+   ```
+
+2. **Activate environment**:
+
+   ```powershell
+   poetry shell
+   ```
+
+3. **Install dependencies if needed**:
+
+   ```powershell
+   poetry install
+   ```
+
+### Project Structure Commands
+
+- **Always check current directory**: `pwd` or `Get-Location`
+- **List files**: `ls` or `Get-ChildItem`
+- **Navigate relative to project root**: Use `.\` for current directory navigation
+
+## Common Error Patterns to Avoid
+
+### ❌ Wrong Commands
+
+```powershell
+# Wrong Python execution
+python manage.py runserver
+
+# Wrong directory creation
+mkdir dir1 dir2 dir3
+
+# Wrong path navigation
+cd /path/to/folder  # Unix-style path
+
+# Wrong file operations
+echo "content\nmore content" > file.txt  # Literal \n
+```
+
+### ✅ Correct Commands
+
+```powershell
+# Correct Python execution
+poetry run python manage.py runserver
+
+# Correct directory creation
+mkdir dir1
+mkdir dir2
+mkdir dir3
+
+# Correct path navigation
+cd .\path\to\folder
+
+# Correct file operations
+@"
+content
+more content
+"@ | Out-File -FilePath file.txt
+```
+
+## Debugging Commands
+
+When something fails, check:
+
+```powershell
+# Current location
+pwd
+
+# Poetry environment status
+poetry env info
+
+# Available commands
+Get-Command poetry
+
+# Environment variables
+$env:PATH
+```
+
+## File Encoding
+
+- **Default encoding**: UTF-8
+- **Specify encoding when needed**:
+
+  ```powershell
+  Out-File -FilePath file.txt -Encoding UTF8
+  ```
+
+## Additional Notes
+
+- **Always test commands in a safe directory first**
+- **Use tab completion** for path navigation
+- **Check command output** for errors before proceeding
+- **When in doubt, use full PowerShell cmdlet names** instead of aliases
